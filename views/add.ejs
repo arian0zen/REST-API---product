@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style2.css" />
+    <title>Add products</title>
+  </head>
+  <body>
+    <nav class="navbar"><h1>Products API</h1></nav>
+    <div class="container">
+      <h1>Welcome Admin</h1>
+      <h3>Add Products here</h3>
+      <form action="/products" method="post">
+        <div class="add_products">
+          <input type="text" name="productId" id="pId" placeholder="Product Id"/>
+          <input type="text" name="productName" id="pName" placeholder="Product Name"/>
+          <input type="text" name="productDesc" id="pDesc" placeholder="Product Description"/>
+          <input type="text" name="productPrice" id="pPrice" placeholder="Product Price"/>
+          <button type="submit" name="add" id="addBtn">Add Product</button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <footer class="footer">&copy; 2022 Arian Shaikh</footer>
+</html>

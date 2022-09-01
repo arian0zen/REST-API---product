@@ -1,0 +1,25 @@
+{
+  "name": "rest-api---product",
+  "version": "1.0.0",
+  "description": "adding and creating products",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arian0zen/REST-API---product.git"
+  },
+  "author": "Ari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arian0zen/REST-API---product/issues"
+  },
+  "homepage": "https://github.com/arian0zen/REST-API---product#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  }
+}
