@@ -7,9 +7,11 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+app.use(bodyParser.json());
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost:27017/products_papayaDB");
@@ -64,6 +66,7 @@ app.post("/products", (req, res) =>{
                 message: "Adding product failed"
             })
         } else{
+            console.log(req.body.productName);
             res.json({
                 response_code: 201,
                 status: "Created",
